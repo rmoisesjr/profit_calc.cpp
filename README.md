@@ -2,6 +2,7 @@
 
 // Function declarations for computing profit and average profit
 
+
 int main()
 {
     // Open the file "data.txt" in read mode

@@ -5,12 +5,12 @@
 using namespace std;
 #include <fstream>
 
-// Function declarations for computing profit and average profit
+// Functon declarations for computing profit and average profit
 void compute(int hours,double rate,double & grosspay,double & federalincometax,double & netpay, int & count);
 
-int main()
+int main(){
   // Open the file "data.txt" in read mode
-{
+
     ifstream inFile("data.txt" , ios::in);
     if( ! inFile)
     {
