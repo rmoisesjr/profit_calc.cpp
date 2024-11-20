@@ -1,5 +1,6 @@
 // Include necessary headers for input/output and file handling
 
+
 // Function declarations for computing profit and average profit
 
 
