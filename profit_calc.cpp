@@ -1,10 +1,16 @@
-// Include necessary headers for input/output and file handling
+// Include necessary headers for input/output and file handling and error handling
 #include <string>
+//allows input and output possible,enables us to use  "cout" and "cin" usage.
 #include <iostream>
+//This header is used to control the formatting of the input and output.
+//It provides tools called manipulators to set things like width, precision, alignment, fill characters, and more when displaying data.
 #include <iomanip>
+//instead of using  the "std::cout", which is long we use "namespace std" to code in a shorter and easier way.
 using namespace std;
+//Is a header that is useful for memory management,program usage,random number management and error handling
+#include <cstdlib>
 
-//we use the #include <fstream> header allows you to work with file streams, 
+//This header allows you to work with file streams, 
 //enabling your program to read from and write to files. It provides the following classes to manipulate files.
 #include <fstream>
 
@@ -29,11 +35,25 @@ int main(){
 //when we want to write from the file we use "ios::out"
 
     fstream inFile("data.txt" , ios::in);
+//Here we are checking if the filestream (inFIle) was opened successfully.The "!" its a switch that makes something true or untrue
+//based on the outcome, ! inFile means: "If the file didn't open, do this."
+//It's a way of checking if something didn't work (the file didn't open) and handling the problem.
     if( ! inFile)
     {
+//If the file dosen't open ,then it will output "File could not be opened", 
+//the "\n" adds a new line.
+// "cerr" is the same fundtion as "cout" ,but it is only used to show errors messages.
+//"exit(1)" is a way to stop the program if something when wrong ,the value 1 means something is wrong and 0 means ,evrething is good.
+//the "exit(1)"" is part of the <cstdlib> header.
         cerr << "File could not be opened\n";
         exit(1);
     }
+//  Declare variables for salesperson name, total sales, cost of sales, net profit,
+// total net profit, and a counter for the number of entries
+
+
+
+
     return 0;
 }
 
