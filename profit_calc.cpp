@@ -49,9 +49,46 @@ int main(){
         exit(1);
     }
 //  Declare variables for salesperson name, total sales, cost of sales, net profit,
-// total net profit, and a counter for the number of entries
+// total net profit.    
+
+    string employee;
+    int hours;
+    double rate, grosspay, federalicometax, netpay;
+    int count=1;
+
+    while (inFile>>employee>>hours>>rate)
+    {
+        compute(hours, rate, grosspay, federalincometax, netpay, count);
+
+        cout<<setw(13)<<employee<<setw(9)<<hours<<setw(9)<<rate<<setw(9)
+        <<grosspay<<setw(9)<<federalincometax<<setw(9)<<netpay<<endl;
+
+    }
+
+    return 0;
+
+    void
+   
+
+// For each entry:
+// Call the compute function to calculate net profit and update total net profit and count
+// Print the salesperson's name, total sales, cost of sales, and net profit
+    void compute(int hours,double rate,double & grosspay,double & federalincometax,double & netpay, int & count){
+    profit = total_sales - cost_of_sales;
+    total_net_profit += profit;
+
+void compute(int hours,double rate,double & grosspay,double & federalincometax,double & netpay, int & count);
+{
+    grosspay = hours * rate;
+    federalincometax= grosspay * .15;
+    netpay = grosspay - federalincometax;
+
+    count = count +1;
+    
+}
 
 
+    
 
 
     return 0;

@@ -11,7 +11,7 @@ int main()
     // Check if the file opened successfully; if not, print an error and exit
 
     // Declare variables for salesperson name, total sales, cost of sales, net profit,
-    // total net profit, and a counter for the number of entries
+    // total net profit
 
     // Read data from the file until the end
     // For each entry:
